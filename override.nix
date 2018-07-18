@@ -16,8 +16,6 @@ in
 
     preRebuild = "patch -p1 < ${stylePatch};";
     postInstall = ''
-      npm i npm
-      npm install
-      npm run css-compile
+      npm run css js
     '';
   }

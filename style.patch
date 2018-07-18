@@ -22,7 +22,7 @@ index 2bce02f63..03f0548c4 100644
 +  @extend .figure-caption;
 +}
 diff --git a/scss/_reboot.scss b/scss/_reboot.scss
-index c79fa4740..fe2bd79fb 100644
+index c79fa4740..133efd1b0 100644
 --- a/scss/_reboot.scss
 +++ b/scss/_reboot.scss
 @@ -33,6 +33,84 @@ html {
@@ -43,13 +43,13 @@ index c79fa4740..fe2bd79fb 100644
 +
 +@font-face {
 +  font-family: Panton;
-+  font-weight: normal;
++  font-weight: 400;
 +  src: url("fonts/panton_regular.otf") format("opentype");
 +}
 +
 +@font-face {
 +  font-family: Panton;
-+  font-weight: bold;
++  font-weight: 700;
 +  src: url("fonts/panton_bold.otf") format("opentype");
 +}
 +
@@ -76,7 +76,7 @@ index c79fa4740..fe2bd79fb 100644
 +@font-face {
 +  font-family: Panton;
 +  font-style: italic;
-+  font-weight: bold;
++  font-weight: 700;
 +  src: url("fonts/panton_bold_italic.otf") format("opentype");
 +}
 +
@@ -103,7 +103,7 @@ index c79fa4740..fe2bd79fb 100644
 +@font-face {
 +  font-family: Panton;
 +  font-style: oblique;
-+  font-weight: bold;
++  font-weight: 700;
 +  src: url("fonts/panton_bold_italic.otf") format("opentype");
 +}
 +
@@ -111,17 +111,15 @@ index c79fa4740..fe2bd79fb 100644
  @at-root {
    @-ms-viewport {
 diff --git a/scss/_variables.scss b/scss/_variables.scss
-index be580deb3..f4aeac00e 100644
+index be580deb3..df52dbfd4 100644
 --- a/scss/_variables.scss
 +++ b/scss/_variables.scss
-@@ -226,8 +226,8 @@ $transition-collapse:         height .35s ease !default;
+@@ -226,7 +226,7 @@ $transition-collapse:         height .35s ease !default;
  // Font, line-height, and color for body text, headings, and more.
  
  // stylelint-disable value-keyword-case
 -$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
--$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 +$font-family-sans-serif:      Panton, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-+$font-family-monospace:       Panton, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
  $font-family-base:            $font-family-sans-serif !default;
  // stylelint-enable value-keyword-case
- 
